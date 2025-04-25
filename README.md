@@ -21,34 +21,33 @@ SQL Tasks Performed
 To clean and prepare the customer transaction data for analysis, the following SQL-based tasks were executed:
 
 1. Data Inspection
-Loaded and viewed the raw data to understand its structure and identify issues like duplicates, null values, and inconsistent formats.
+ - Loaded and viewed the raw data to understand its structure and identify issues like duplicates, null values, and inconsistent formats.
 
 2. Data Type Conversion
-Ensured that date fields (like transaction_date) were properly converted to date data types.
-
-Converted transaction amounts to numeric formats for accurate aggregation and calculations.
+ - Ensured that date fields (like transaction_date) were properly converted to date data types.
+ - Converted transaction amounts to numeric formats for accurate aggregation and calculations.
 
 3. Text Standardization
-Cleaned text fields such as customer names and transaction types:
-Applied proper casing (e.g., title case for names).
-Ensured uniformity (e.g., converting all transaction types to uppercase).
+ - Cleaned text fields such as customer names and transaction types:
+ - Applied proper casing (e.g., title case for names).
+ - Ensured uniformity (e.g., converting all transaction types to uppercase).
 
 4. Duplicate Removal
-Identified and removed duplicate rows to maintain data integrity and prevent double counting in reports.
+ - Identified and removed duplicate rows to maintain data integrity and prevent double counting in reports.
 
 5. Handling Missing or Null Values
-Replaced missing transaction amounts with default values (e.g., 0) to avoid calculation errors.
-Checked for and addressed any null or missing values in other critical fields.
+ - Replaced missing transaction amounts with default values (e.g., 0) to avoid calculation errors.
+ - Checked for and addressed any null or missing values in other critical fields.
 
 6. Fixing Inconsistent Entries
-Detected and corrected inconsistencies in categorical fields such as transaction_type (e.g., correcting typos or formatting errors).
+ - Detected and corrected inconsistencies in categorical fields such as transaction_type (e.g., correcting typos or formatting errors).
 
 7. Creating a Cleaned Version of the Dataset
-Created a new table (customer_transaction_cleaned) containing all cleaned and standardized data.
-This preserved the original dataset for backup and traceability purposes.
+ - Created a new table (customer_transaction_cleaned) containing all cleaned and standardized data.
+ - This preserved the original dataset for backup and traceability purposes.
 
 8. Preparing for Analysis
-Ensured the cleaned table was optimized for querying and ready to be used for dashboards, reports, or further analysis.
+ - Ensured the cleaned table was optimized for querying and ready to be used for dashboards, reports, or further analysis.
 
 Data Insights After Cleaning
 1. Total Transactions
